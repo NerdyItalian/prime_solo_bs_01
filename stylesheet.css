@@ -1,3 +1,7 @@
+body {
+	background-color: #4BB5C1;
+	font-family: monospace;
+}
 .row {
 	display: table;
 }
@@ -5,9 +9,26 @@
 .row .well {
 	display: table-cell;
 	float: none;
-	background-color: #7E4DB2;
+	background-color: #7FC6BC;
+	color: #EDF7F2;
+	text-align: center;
+	font-family: monospace;
+}
+
+.well {
+	padding: 25px 25px 25px 25px;
+}
+
+.removeBtn {
+	margin: 10px;
 }
 
 h2 {
 	text-align: center;
+	color: #EDF7F2;
 }
+
+.searchResults {
+	padding: 20px 0 20px 0;
+}
+

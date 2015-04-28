@@ -12,7 +12,7 @@ function searchCallback(results) {
 	    	cell += '<div class="col-md-4 well"><img class="img-thumbnail hidden-xs hidden-sm" src="' + games.image.icon_url + '"/><br><p class="lead">'  + games.name + '</p>' + otherInfo +'<button class="btn btn-sm btn-success removeBtn">Remove</button></div>';
 			count++
 			if (count == 3){
-				$(".searchResults").append('<div class="row">' + cell + '</div>');
+				$(".searchResults").append('<div class="row">' + cell + '</div>').hide().fadeIn("slow");
 				count = 0;
 				cell = '';
 		};
@@ -25,14 +25,13 @@ function searchCallback(results) {
 //search("batman");
 
 $(document).ready(function() {
-	$(".searchBtn").on("click", function(){
+	$(".searchBtn").on("click",function(){
 		userSearch = $("#searchField").val();
 		search(userSearch);
 	});
 
 	$(".searchResults").on("click", ".removeBtn", function(){
-
-		$(this).parent().remove();
+		$(this).parent().fadeOut();
 	})
 	
 });
