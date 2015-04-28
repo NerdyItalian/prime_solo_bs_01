@@ -1,4 +1,16 @@
-body {
+.row {
+	display: table;
+}
+
+.row .well {
+	display: table-cell;
+	float: none;
+}
+
+.well {
+}
+
+/*body {
 	background-color: #4BB5C1;
 	font-family: monospace;
 }
@@ -30,5 +42,5 @@ h2 {
 
 .searchResults {
 	padding: 20px 0 20px 0;
-}
+}*/
 
