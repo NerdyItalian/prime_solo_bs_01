@@ -1,0 +1,13 @@
+.row {
+	display: table;
+}
+
+.row .well {
+	display: table-cell;
+	float: none;
+	background-color: #7E4DB2;
+}
+
+h2 {
+	text-align: center;
+}
